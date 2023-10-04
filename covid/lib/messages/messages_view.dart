@@ -10,9 +10,14 @@ class Messages extends StatefulWidget {
 class _MessagesState extends State<Messages> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("Messages"),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+        ),
+        body: Center(
+          child: Text("Messages"),
+        ),
       ),
     );
   }
